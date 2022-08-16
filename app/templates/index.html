@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block title %} BANDS {% endblock title %}
+
+
+{% block content %}
+
+
+<h5>My favorite bands:</h5>
+<ul>{% for band in bands %}
+    <li>{{band}}</li>
+    {% endfor %}
+</ul> 
+
+{% endblock content %}
